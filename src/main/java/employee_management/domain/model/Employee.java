@@ -2,11 +2,12 @@ package employee_management.domain.model;
 
 import employee_management.domain.enums.entitlement.AdminEntitlement;
 import employee_management.domain.enums.Role;
-import employee_management.domain.enums.entitlement.ManagerEntitlement;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,38 +15,23 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Admin {
+public class Employee {
     private Long id;
-
     private String username;
-
     private String password;
-
     private String email;
-
     private String firstName;
-
     private String lastName;
 
-    private LocalDateTime createdAt;
-
-    private LocalDateTime updatedAt;
-
-    // can disable without deleting
     private boolean active;
-
-    // optimistic-lock/version
     private Long version;
 
-    private byte[] profileImage;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
-    // (Optional) metadata
+    private byte[] profileImage;
     private String profileImageFilename;
     private String profileImageContentType;
 
-    private Role role = Role.ADMIN;
-
-    // Admin-specific capabilities
-    // Initialize entitlements to avoid NullPointerException
-    private EnumSet<AdminEntitlement> entitlements = EnumSet.noneOf(AdminEntitlement.class);
+    private Role role;
 }
