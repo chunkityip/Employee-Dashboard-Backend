@@ -1,6 +1,6 @@
 package employee_management.domain.model;
 
-import employee_management.domain.enums.entitlement.AdminEntitlement;
+
 import employee_management.domain.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

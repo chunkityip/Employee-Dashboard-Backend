@@ -1,8 +1,7 @@
 package employee_management.domain.model;
 
-import employee_management.domain.enums.entitlement.AdminEntitlement;
 import employee_management.domain.enums.Role;
-import employee_management.domain.enums.entitlement.ManagerEntitlement;
+import employee_management.domain.enums.entitlement.AdminEntitlement;
 import lombok.*;
 
 import java.time.LocalDateTime;
