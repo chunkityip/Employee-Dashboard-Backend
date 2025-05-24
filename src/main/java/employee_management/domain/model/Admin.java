@@ -1,9 +1,12 @@
-package employee_management.model;
+package employee_management.domain.model;
 
+import employee_management.domain.enums.Entitlement;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -30,4 +33,12 @@ public class Admin {
 
     // optimistic-lock/version
     private Long version;
+
+    private byte[] profileImageData;
+
+    // (Optional) metadata
+    private String profileImageFilename;
+    private String profileImageContentType;
+
+    private Set<Entitlement> entitlements = new HashSet<>();
 }
