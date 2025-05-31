@@ -15,7 +15,8 @@ import java.util.Optional;
 
 @Repository
 public class AdminDao {
-
+    @Autowired
+    private DataSource dataSource;
     @Autowired
     public Optional<Admin> getCurrentAdmin() throws SQLException {
         // Select everything from the admin table
@@ -60,7 +61,7 @@ public class AdminDao {
             statement.setBoolean(4, admin.isActive());
             statement.setBytes(5, admin.getProfileImage());
             statement.setString(6, String.join(",", admin.getEntitlements().stream().map(Enum::name).toList()));
-            statement.setLong(7, admin.getId()); // ✅ this was missing
+            statement.setLong(7, admin.getId());
 
             int rowsUpdated = statement.executeUpdate();
             if (rowsUpdated == 0) {

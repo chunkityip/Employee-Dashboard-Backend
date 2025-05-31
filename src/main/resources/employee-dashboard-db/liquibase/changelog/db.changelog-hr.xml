@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+    <changeSet id="create-hr-table" author="your-name">
+        <createTable tableName="hr">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"
+                             nullable="false"
+                             foreignKeyName="fk_hr_employee"
+                             references="employee(id)"/>
+            </column>
+
+            <column name="role" type="VARCHAR(20)"/>
+            <column name="department" type="VARCHAR(100)"/>
+            <column name="location" type="VARCHAR(100)"/>
+            <column name="approval_signature" type="VARCHAR(255)"/>
+            <column name="entitlements" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

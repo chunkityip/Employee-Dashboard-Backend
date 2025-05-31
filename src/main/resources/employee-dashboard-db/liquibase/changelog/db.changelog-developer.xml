@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+    <changeSet id="create-developer-table" author="your-name">
+        <createTable tableName="developer">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"
+                             nullable="false"
+                             foreignKeyName="fk_developer_employee"
+                             references="employee(id)"/>
+            </column>
+
+            <column name="role" type="VARCHAR(20)"/>
+            <column name="programming_language" type="VARCHAR(100)"/>
+            <column name="framework" type="VARCHAR(100)"/>
+            <column name="current_project" type="VARCHAR(255)"/>
+            <column name="developer_type" type="VARCHAR(50)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

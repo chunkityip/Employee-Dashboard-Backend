@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+    <changeSet id="create-ba-table" author="your-name">
+        <createTable tableName="ba">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="role" type="VARCHAR(20)"/>
+        </createTable>
+
+        <!-- Add foreign key constraint separately -->
+        <addForeignKeyConstraint
+                baseTableName="ba"
+                baseColumnNames="id"
+                referencedTableName="employee"
+                referencedColumnNames="id"
+                constraintName="fk_ba_employee"/>
+    </changeSet>
+</databaseChangeLog>
