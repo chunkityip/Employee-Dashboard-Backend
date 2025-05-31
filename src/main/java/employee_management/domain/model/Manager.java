@@ -15,7 +15,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class Manager extends Employee {
+public class Manager extends User {
     @Builder.Default
     private Role role = Role.MANAGER;
     @Builder.Default

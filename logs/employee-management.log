@@ -4757,3 +4757,115 @@ java.lang.IllegalArgumentException: No enum constant employee_management.domain.
 2025-05-31T12:35:00.877-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
 2025-05-31T12:35:00.877-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
 2025-05-31T12:35:00.877-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:35:08.873-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@5e6dc154 is alive
+2025-05-31T12:35:22.234-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@70b0e4a3 is alive
+2025-05-31T12:35:30.893-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:35:30.893-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:35:30.893-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:35:45.906-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@41b0c379 is alive
+2025-05-31T12:35:54.950-04:00 DEBUG 13992 --- [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5e6dc154: (connection has passed maxLifetime)
+2025-05-31T12:35:54.951-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (d9d0694f-1246-4f90-b1f6-f925e4a5ba5f)
+2025-05-31T12:35:54.951-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] org.postgresql.Driver                    : Connecting with URL: jdbc:postgresql://localhost:5432/employee_dashboard_db
+2025-05-31T12:35:54.951-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] org.postgresql.jdbc.PgConnection         : PostgreSQL JDBC Driver 42.7.5
+2025-05-31T12:35:54.951-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] org.postgresql.jdbc.PgConnection         :   setDefaultFetchSize = 0
+2025-05-31T12:35:54.952-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] org.postgresql.jdbc.PgConnection         :   setPrepareThreshold = 5
+2025-05-31T12:35:54.952-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] o.p.core.v3.ConnectionFactoryImpl        : Trying to establish a protocol version 3 connection to localhost:5432
+2025-05-31T12:35:54.953-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] o.p.core.v3.ConnectionFactoryImpl        : Receive Buffer Size is 65,536
+2025-05-31T12:35:54.953-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] o.p.core.v3.ConnectionFactoryImpl        : Send Buffer Size is 65,536
+2025-05-31T12:35:54.967-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (d9d0694f-1246-4f90-b1f6-f925e4a5ba5f)
+2025-05-31T12:35:54.967-04:00 DEBUG 13992 --- [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@56ce521b
+2025-05-31T12:35:57.970-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@1920e95c is alive
+2025-05-31T12:36:00.898-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:36:00.898-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:36:00.898-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:36:30.904-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:36:30.904-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:36:30.904-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:36:39.988-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@4ea4f0a6 is alive
+2025-05-31T12:37:00.911-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:37:00.911-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:37:00.911-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:37:06.078-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@70b0e4a3 is alive
+2025-05-31T12:37:22.649-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@41b0c379 is alive
+2025-05-31T12:37:30.927-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:37:30.927-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:37:30.927-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:37:45.743-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@1920e95c is alive
+2025-05-31T12:37:49.761-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@56ce521b is alive
+2025-05-31T12:38:00.929-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:38:00.929-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:38:00.929-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:38:21.957-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@4ea4f0a6 is alive
+2025-05-31T12:38:30.931-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:38:30.931-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:38:30.931-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:38:49.924-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@70b0e4a3 is alive
+2025-05-31T12:38:59.390-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@41b0c379 is alive
+2025-05-31T12:39:00.937-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:39:00.937-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:39:00.937-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:39:30.946-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:39:30.946-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:39:30.946-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:39:33.507-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@1920e95c is alive
+2025-05-31T12:39:44.554-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@56ce521b is alive
+2025-05-31T12:40:00.954-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:40:00.954-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:40:00.954-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:40:03.922-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@4ea4f0a6 is alive
+2025-05-31T12:40:30.967-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:40:30.967-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:40:30.967-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:40:33.778-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@70b0e4a3 is alive
+2025-05-31T12:40:36.133-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@41b0c379 is alive
+2025-05-31T12:41:00.975-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:41:00.975-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:41:00.975-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:41:21.273-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@1920e95c is alive
+2025-05-31T12:41:30.979-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:41:30.979-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:41:30.979-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:41:39.361-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@56ce521b is alive
+2025-05-31T12:41:45.892-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@4ea4f0a6 is alive
+2025-05-31T12:42:00.981-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:42:00.981-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:42:00.981-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:42:12.875-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@41b0c379 is alive
+2025-05-31T12:42:17.624-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@70b0e4a3 is alive
+2025-05-31T12:42:30.987-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:42:30.987-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:42:30.987-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:43:00.990-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:43:00.990-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:43:00.990-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:43:09.043-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@1920e95c is alive
+2025-05-31T12:43:27.852-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@4ea4f0a6 is alive
+2025-05-31T12:43:31.003-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:43:31.003-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:43:31.003-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:43:34.154-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@56ce521b is alive
+2025-05-31T12:43:49.626-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@41b0c379 is alive
+2025-05-31T12:44:01.018-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:44:01.018-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:44:01.018-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:44:01.476-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@70b0e4a3 is alive
+2025-05-31T12:44:31.022-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:44:31.022-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:44:31.022-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:44:56.816-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection org.postgresql.jdbc.PgConnection@1920e95c is alive
+2025-05-31T12:45:01.032-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:45:01.032-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  cleanup stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:45:01.032-04:00 DEBUG 13992 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-31T12:45:04.562-04:00 DEBUG 13992 --- [SpringApplicationShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-05-31T12:45:04.563-04:00 DEBUG 13992 --- [SpringApplicationShutdownHook] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3300f4fd, started on Sat May 31 12:05:58 EDT 2025
+2025-05-31T12:45:04.580-04:00  INFO 13992 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-31T12:45:04.629-04:00  INFO 13992 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-31T12:45:04.637-04:00  INFO 13992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-31T12:45:04.637-04:00 DEBUG 13992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before shutdown stats (total=5/20, idle=5/5, active=0, waiting=0)
+2025-05-31T12:45:04.639-04:00 DEBUG 13992 --- [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@41b0c379: (connection evicted)
+2025-05-31T12:45:04.641-04:00 DEBUG 13992 --- [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@70b0e4a3: (connection evicted)
+2025-05-31T12:45:04.641-04:00 DEBUG 13992 --- [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1920e95c: (connection evicted)
+2025-05-31T12:45:04.641-04:00 DEBUG 13992 --- [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4ea4f0a6: (connection evicted)
+2025-05-31T12:45:04.641-04:00 DEBUG 13992 --- [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@56ce521b: (connection evicted)
+2025-05-31T12:45:04.641-04:00 DEBUG 13992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  shutdown stats (total=0/20, idle=0/5, active=0, waiting=0)
+2025-05-31T12:45:04.641-04:00  INFO 13992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

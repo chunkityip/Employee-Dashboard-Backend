@@ -10,7 +10,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class Developer extends Employee{
+public class Developer extends User{
     @Builder.Default
     private Role role = Role.DEVELOPER;
 

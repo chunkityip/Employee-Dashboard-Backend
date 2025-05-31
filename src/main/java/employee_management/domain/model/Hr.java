@@ -14,7 +14,7 @@ import java.util.EnumSet;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class Hr extends Employee {
+public class Hr extends User {
     @Builder.Default
     private Role role = Role.HR;
 

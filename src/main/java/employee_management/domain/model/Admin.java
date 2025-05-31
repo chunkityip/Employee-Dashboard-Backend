@@ -12,37 +12,8 @@ import java.util.EnumSet;
 @SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = false)
-public class Admin {
-    private Long id;
-
-    private String username;
-
-    private String password;
-
-    private String email;
-
-    private String firstName;
-
-    private String lastName;
-
-    private LocalDateTime createdAt;
-
-    private LocalDateTime updatedAt;
-
-    // can disable without deleting
-    private boolean active;
-
-    // optimistic-lock/version
-    private Long version;
-
-    private byte[] profileImage;
-    // (Optional) metadata
-    private String profileImageFilename;
-    private String profileImageContentType;
-    @Builder.Default
-    private Role role = Role.ADMIN;
-
+@EqualsAndHashCode(callSuper = true)
+public class Admin extends User{
     // Admin-specific capabilities
     // Initialize entitlements to avoid NullPointerException
     @Builder.Default
