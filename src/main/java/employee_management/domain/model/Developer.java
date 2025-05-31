@@ -2,16 +2,16 @@ package employee_management.domain.model;
 
 import employee_management.domain.enums.DeveloperType;
 import employee_management.domain.enums.Role;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 @Data
-@Builder
+@SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 public class Developer extends Employee{
+    @Builder.Default
     private Role role = Role.DEVELOPER;
 
     private String programmingLanguage;
