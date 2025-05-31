@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+          http://www.liquibase.org/xml/ns/dbchangelog
+          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="2025/5/31" author="ck">
+        <createTable tableName="manager">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" foreignKeyName="fk_manager_employee" references="employee(id)"/>
+            </column>
+
+            <column name="department" type="VARCHAR(50)"/>
+            <column name="team_member_ids" type="VARCHAR(10)"/>
+            <column name="entitlements" type="VARCHAR(25)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

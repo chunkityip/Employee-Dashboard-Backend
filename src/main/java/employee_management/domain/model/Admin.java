@@ -35,7 +35,6 @@ public class Admin {
     private Long version;
 
     private byte[] profileImage;
-
     // (Optional) metadata
     private String profileImageFilename;
     private String profileImageContentType;

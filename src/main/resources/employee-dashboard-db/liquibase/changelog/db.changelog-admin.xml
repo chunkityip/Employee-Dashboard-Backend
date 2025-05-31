@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+          http://www.liquibase.org/xml/ns/dbchangelog
+          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="2025/5/31" author="ck">
+        <createTable tableName="admin">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="username" type="VARCHAR(50)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+
+            <column name="password" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="email" type="VARCHAR(50)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+
+            <column name="firstName" type="VARCHAR(50)"/>
+            <column name="lastName" type="VARCHAR(50)"/>
+            <column name="createdAt" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP"/>
+            <column name="updatedAt" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP"/>
+            <column name="active" type="BOOLEAN" defaultValueBoolean="true"/>
+            <column name="version" type="BIGINT"/>
+
+            <column name="profile_image" type="BYTEA"/>
+            <column name="profile_image_filename" type="VARCHAR(255)"/>
+            <column name="profile_image_content_type" type="VARCHAR(100)"/>
+
+            <column name="role" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="entitlements" type="VARCHAR(1000)"/>
+
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
