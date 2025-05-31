@@ -2,7 +2,7 @@ plugins {
 	java
 	id("org.springframework.boot") version "3.5.0"
 	id("io.spring.dependency-management") version "1.1.7"
-	id("org.liquibase.gradle") version "2.2.0"
+	// Removed Liquibase plugin - let Spring Boot handle it
 }
 
 group = "employee-management"
@@ -43,16 +43,5 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
-liquibase {
-	activities.register("main") {
-		this.arguments = mapOf(
-				"changeLogFile" to "src/main/resources/db/changelog/db.changelog-master.xml",
-				"url" to "jdbc:postgresql://localhost:5432/employee_dashboard_db",  // ✅ Replace with your actual DB
-				"username" to "user",                            // ✅ Replace with your user
-				"password" to "12345",                        // ✅ Replace with your password
-				"driver" to "org.postgresql.Driver"
-		)
-	}
-	runList = "main"
-}
-
+// Removed entire liquibase block - Spring Boot will handle Liquibase automatically
+// using the configuration in application.properties
