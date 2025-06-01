@@ -10,7 +10,7 @@
     <include file="db.changelog-ba.xml" relativeToChangelogFile="true"/>
     <include file="db.changelog-developer.xml" relativeToChangelogFile="true"/>
     <include file="db.changelog-devops.xml" relativeToChangelogFile="true"/>
-    <include file="db.changelog-employee.xml" relativeToChangelogFile="true"/>
+    <include file="db.changelog-user.xml" relativeToChangelogFile="true"/>
     <include file="db.changelog-hr.xml" relativeToChangelogFile="true"/>
     <include file="db.changelog-manager.xml" relativeToChangelogFile="true"/>
 

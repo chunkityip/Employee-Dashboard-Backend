@@ -3,6 +3,7 @@ package employee_management.domain.dao;
 import employee_management.domain.enums.Role;
 import employee_management.domain.enums.entitlement.AdminEntitlement;
 import employee_management.domain.model.Admin;
+import employee_management.domain.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.EnumSet;
+import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -31,8 +33,6 @@ public class AdminDao {
                 "profile_image_filename, profile_image_content_type, role, entitlements " +
                 "FROM admin LIMIT 1";
 
-        logger.info("Executing query to get current admin: {}", sql);
-
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql)) {
 
@@ -41,8 +41,6 @@ public class AdminDao {
 
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
-                    logger.debug("Admin record found, building Admin object");
-
                     // Handle entitlements safely
                     EnumSet<AdminEntitlement> entitlements = EnumSet.noneOf(AdminEntitlement.class);
                     String entitlementsStr = resultSet.getString("entitlements");
@@ -117,6 +115,12 @@ public class AdminDao {
             throw new SQLException("Unexpected error getting current admin: " + e.getMessage(), e);
         }
     }
+
+    // Only Admin can search all Users as entitlement(?)
+//    public List<User> getAllUsers() throws SQLException {
+//        // Implement the logic to retrieve all users
+//        // Return a list of User objects
+//    }
 
 
 }
